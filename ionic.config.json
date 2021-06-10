@@ -1,0 +1,7 @@
+{
+  "name": "SchoolDemo_Weather",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
