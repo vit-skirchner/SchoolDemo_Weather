@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Wetter App
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="getLocationWeather()">
+        <ion-icon name="location"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="currentWeather" [fullscreen]="true" [ngClass]="currentWeather.dt < currentWeather.sys.sunrise || currentWeather.dt > currentWeather.sys.sunset ? 'night' :
+    'day'">
+  <h1>{{currentWeather.name}}</h1>
+  <p>{{date | date:'fullDate'}}</p>
+  <hr>
+  <img [src]="'http://openweathermap.org/img/wn/'+currentWeather.weather[0].icon+'@2x.png'">
+  <div class="weather">{{currentWeather.weather[0].description}}</div>
+  <hr>
+  <div class="main_temp">{{currentWeather.main.temp | round}} °C</div>
+  <div class="main_info">Gefühlt: {{currentWeather.main.feels_like}} °C / Min: {{currentWeather.main.temp_min}} °C /
+    Max: {{currentWeather.main.temp_max}} °C</div>
+  <div class="main_info">Luftdruck: {{currentWeather.main.pressure}} hPa
+    / Luftfeuchtigkeit: {{currentWeather.main.humidity}} %</div>
+  <ion-list *ngIf="forecastWeather">
+    <ion-item *ngFor="let item of forecastWeather" lines="full">
+      {{item.date | date:'EEEE'}}
+      <ion-label slot="end">
+        <img [src]="'http://openweathermap.org/img/wn/'+item.image+'.png'">
+      </ion-label>
+      <ion-label slot="end">
+        <ion-badge color="danger">{{item.maxTemp}}</ion-badge>
+        <ion-badge color="secondary">{{item.minTemp}}</ion-badge>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

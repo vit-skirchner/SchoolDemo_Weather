@@ -1,0 +1,11 @@
+{
+  "appId": "app.valeoit.SchoolDemo",
+  "appName": "SchoolDemo_Weather",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}

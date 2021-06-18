@@ -1,0 +1,50 @@
+ion-content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.main_temp {
+  font-size: 4em;
+}
+
+.main_info {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+ion-list {
+  margin-top: 30px;
+
+  ion-label {
+    text-align: right;
+  }
+}
+
+ion-badge {
+  &:first-child {
+    margin-right: 10px;
+  }
+}
+
+ion-content.night {
+  --background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('./../../assets/night.png') no-repeat center center / cover !important;
+}
+
+ion-content.day {
+  --background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('./../../assets/day.png') no-repeat center center / cover !important;
+}
+
+ion-list {
+  --ion-item-background: transparent;
+}

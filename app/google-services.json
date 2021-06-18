@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957371320312",
+    "project_id": "schooldemo-e4e9f",
+    "storage_bucket": "schooldemo-e4e9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957371320312:android:7506307053d54caf73f80d",
+        "android_client_info": {
+          "package_name": "app.valeoit.SchoolDemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957371320312-bg5troba75tj9to08r53rq6jvc19h0mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYJnAAkXcMj32rrbEImVJnt25C7jmzg7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957371320312-bg5troba75tj9to08r53rq6jvc19h0mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
